@@ -1,0 +1,24 @@
+{
+  "name": "bro-carousel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "snowpack dev",
+    "clean": "rm -rf dist build",
+    "build": "npm run clean && snowpack build",
+    "prepublishOnly": "npm run build",
+    "build:example": "snowpack build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "lit": "^2.0.0-rc.2"
+  },
+  "devDependencies": {
+    "snowpack": "^3.5.9",
+    "standard": "^16.0.3"
+  }
+}
